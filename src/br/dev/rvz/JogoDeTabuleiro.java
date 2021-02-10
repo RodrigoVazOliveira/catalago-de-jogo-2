@@ -23,4 +23,11 @@ public class JogoDeTabuleiro extends Jogo {
     public void setQuantidadeDePeca(int quantidadeDePeca) {
         this.quantidadeDePeca = quantidadeDePeca;
     }
+
+    @Override
+    public String toString() {
+        return  super.toString() + " JogoDeTabuleiro{" +
+                "quantidadeDePeca=" + quantidadeDePeca +
+                '}';
+    }
 }

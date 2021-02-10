@@ -29,11 +29,11 @@ public class Jogo {
         this.nome = nome;
     }
 
-    public String getQuantidadeDeJogador() {
+    public int getQuantidadeDeJogador() {
         return quantidadeDeJogador;
     }
 
-    public void setQuantidadeDeJogador(String quantidadeDeJogador) {
+    public void setQuantidadeDeJogador(int quantidadeDeJogador) {
         this.quantidadeDeJogador = quantidadeDeJogador;
     }
 
@@ -51,5 +51,15 @@ public class Jogo {
 
     public void setTipoDeJogo(TipoDeJogo tipoDeJogo) {
         this.tipoDeJogo = tipoDeJogo;
+    }
+
+    @Override
+    public String toString() {
+        return "Jogo{" +
+                "nome='" + nome + '\'' +
+                ", quantidadeDeJogador=" + quantidadeDeJogador +
+                ", horaDeJogo=" + horaDeJogo +
+                ", tipoDeJogo=" + tipoDeJogo +
+                '}';
     }
 }
