@@ -15,6 +15,27 @@ public class SistemaPrincipal {
         this.catalagoDeJogo = new CatalagoDeJogo();
     }
 
+    public void mainMenu() {
+        while(this.run) {
+            IO.output("1. Adicionar Jogo de Tabuleiro.\n2. Adicionar jogo de VideoGame.\n3.adicionar jogo de rua.\n4. Listar jogos.\n5. Sair do programa.");
+            this.opcoes = IO.input().nextInt();
+
+            if (this.opcoes == 1) {
+                adicionarJogoTabuleiro();
+            } else if (this.opcoes == 2) {
+                adicionarJogoDeVideogame();
+            } else if (this.opcoes == 3) {
+                adicionarJogoDeRua();
+            } else if (this.opcoes == 4) {
+                catalagoDeJogo.listar();
+            } else if (this.opcoes == 5) {
+                this.run = false;
+            } else {
+                IO.output("opção inválida");
+            }
+        }
+    }
+
     private void adicionarJogoTabuleiro() {
         IO.output("Por favor, informar o nome do jogo, quantidade de jogador, horas de jogos e quantidade de peças");
         Jogo jogoDeTabuleiro = new JogoDeTabuleiro(

@@ -21,4 +21,11 @@ public class CatalagoDeJogo {
     public void setCatalagoJogo(List<Jogo> catalagoJogo) {
         this.catalagoJogo = catalagoJogo;
     }
+
+    public void listar() {
+        for(Jogo item : catalagoJogo) {
+            IO.output("=======================================");
+            IO.output(item.toString());
+        }
+    }
 }
