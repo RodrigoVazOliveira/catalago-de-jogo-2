@@ -10,7 +10,7 @@ public class JogoDeVideogame extends Jogo {
     public JogoDeVideogame() {
     }
 
-    public JogoDeVideogame(String nome, String quantidadeDeJogador, int horaDeJogo, TipoDeJogo tipoDeJogo, boolean online) {
+    public JogoDeVideogame(String nome, int quantidadeDeJogador, int horaDeJogo, TipoDeJogo tipoDeJogo, boolean online) {
         super(nome, quantidadeDeJogador, horaDeJogo, tipoDeJogo);
         this.online = online;
     }

@@ -11,7 +11,7 @@ public class JogoDeTabuleiro extends Jogo {
     public JogoDeTabuleiro() {
     }
 
-    public JogoDeTabuleiro(String nome, String quantidadeDeJogador, int horaDeJogo, TipoDeJogo tipoDeJogo, int quantidadeDePeca) {
+    public JogoDeTabuleiro(String nome, int quantidadeDeJogador, int horaDeJogo, TipoDeJogo tipoDeJogo, int quantidadeDePeca) {
         super(nome, quantidadeDeJogador, horaDeJogo, tipoDeJogo);
         this.quantidadeDePeca = quantidadeDePeca;
     }

@@ -7,14 +7,14 @@ package br.dev.rvz;
 public class Jogo {
 
     private String nome;
-    private String quantidadeDeJogador;
+    private int quantidadeDeJogador;
     private int horaDeJogo;
     private TipoDeJogo tipoDeJogo;
 
     public Jogo() {
     }
 
-    public Jogo(String nome, String quantidadeDeJogador, int horaDeJogo, TipoDeJogo tipoDeJogo) {
+    public Jogo(String nome, int quantidadeDeJogador, int horaDeJogo, TipoDeJogo tipoDeJogo) {
         this.nome = nome;
         this.quantidadeDeJogador = quantidadeDeJogador;
         this.horaDeJogo = horaDeJogo;

@@ -11,7 +11,7 @@ public class JogoDeRua extends Jogo {
     public JogoDeRua() {
     }
 
-    public JogoDeRua(String nome, String quantidadeDeJogador, int horaDeJogo, TipoDeJogo tipoDeJogo, boolean perigoso, LocalParaBrinca localParaBrinca) {
+    public JogoDeRua(String nome, int quantidadeDeJogador, int horaDeJogo, TipoDeJogo tipoDeJogo, boolean perigoso, LocalParaBrinca localParaBrinca) {
         super(nome, quantidadeDeJogador, horaDeJogo, tipoDeJogo);
         this.perigoso = perigoso;
         this.localParaBrinca = localParaBrinca;
