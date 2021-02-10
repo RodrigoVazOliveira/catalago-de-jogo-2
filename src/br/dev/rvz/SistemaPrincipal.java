@@ -15,6 +15,10 @@ public class SistemaPrincipal {
         this.catalagoDeJogo = new CatalagoDeJogo();
     }
 
+
+    /**
+     * responsavel por decidir as opções de funcionalidade
+     */
     public void mainMenu() {
         while(this.run) {
             IO.output("1. Adicionar Jogo de Tabuleiro.\n2. Adicionar jogo de VideoGame.\n3.adicionar jogo de rua.\n4. Listar jogos.\n5. Sair do programa.");
@@ -35,6 +39,7 @@ public class SistemaPrincipal {
             }
         }
     }
+
 
     private void adicionarJogoTabuleiro() {
         IO.output("Por favor, informar o nome do jogo, quantidade de jogador, horas de jogos e quantidade de peças");
@@ -82,6 +87,13 @@ public class SistemaPrincipal {
 
     }
 
+
+    /**
+     * responsavel por retornar o valor padrão de local de brincar
+     * com a decisão do usuário
+     * @param resposta
+     * @return localparabrinca
+     */
     private LocalParaBrinca verificarLocalParaBrincar(String resposta) {
         if (resposta.equalsIgnoreCase("cidade")) {
             return LocalParaBrinca.CIDADE;
@@ -92,6 +104,13 @@ public class SistemaPrincipal {
         }
     }
 
+
+    /**
+     * responsavel por retornar verdadeiro ou falso
+     * com a resposta do usuário se e online ou não
+     * @param resposta
+     * @return
+     */
     private boolean verificarSimOuNao(String resposta) {
         if (resposta.equalsIgnoreCase("sim")) {
             return true;
